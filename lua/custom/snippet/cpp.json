@@ -18,7 +18,7 @@
     "  ios_base::sync_with_stdio(false);                                            \\",
     "  cin.tie(NULL);                                                               ",
     "#define ll long long",
-    "#define endl \"\n\"",
+    
     "using namespace std;",
     "",
     "void solve() {}",
@@ -27,7 +27,7 @@
     "  //  freopen(\"whereami.in\", \"r\", stdin);",
     "  //  freopen(\"whereami.out\", \"w\", stdout);",
     "  fastio();",
-    "  int n = 1;",
+    "  int t = 0;",
     "  cin >> t;",
     "  while (t--)",
     "    solve();",
