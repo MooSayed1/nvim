@@ -93,6 +93,9 @@ opt.signcolumn = "auto:1-2"
 vim.opt.termguicolors = true
 -- to made ctrl+x swich from insert mode to normal mode
 vim.api.nvim_set_keymap("i", "<C-x>", "<ESC>", { noremap = true })
+-- Map Ctrl + S to save changes and switch to normal mode from insert mode
+--vim.api.nvim_set_keymap('i', '<C-s>', '<Esc>:w<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-S>', '<C-O>:w<CR><C-O>:stopinsert<CR>', { noremap = true, silent = true })
 
 -- Disable arrow keys
 vim.keymap.set({ "n", "v", "x", "i" }, "<Up>", "<Nop>")
