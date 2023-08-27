@@ -166,6 +166,7 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+
   {
     "xeluxee/competitest.nvim",
     --a Neovim plugin to automate testcases management and checking for Competitive Programming
@@ -177,7 +178,12 @@ local plugins = {
       },
     },
     config = function()
-      require("competitest").setup()
+      require("competitest").setup{
+
+        template_file = {
+          cpp = "~/Desktop/.config/nvim/lua/custom/template/file.cpp",
+        }
+      }
     end,
   },
   -- QOL ----------------------------------------------------------------------

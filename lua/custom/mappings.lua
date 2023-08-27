@@ -49,7 +49,7 @@ M.compiletion = {
     ["<leader>gc"] = {
       function()
         if vim.bo.ft == "cpp" then
-          require("nvterm.terminal").send("clear && g++ -o out " .. vim.fn.expand "%" .. " && ./out", "vertical")
+          require("nvterm.terminal").send("clear && g++ -o out " .. vim.fn.expand "%" .. " && ./out", "horizontal")
         elseif vim.bo.ft == "python" then
           require("nvterm.terminal").send("clear && python " .. vim.fn.expand "%" .. "", "vertical")
         else
