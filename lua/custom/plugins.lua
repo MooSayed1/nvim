@@ -178,11 +178,20 @@ local plugins = {
       },
     },
     config = function()
-      require("competitest").setup{
-
+      require("competitest").setup {
+        received_problems_path = "$(HOME)/Competitive Programming/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)",
+        received_contests_directory = "$(HOME)/Competitive Programming/$(JUDGE)/$(CONTEST)",
+        received_contests_problems_path = "$(PROBLEM).$(FEXT)",
+        received_problems_prompt_path = false,
+        testcases_use_single_file = true,
+        evaluate_template_modifiers = true,
+        received_contests_prompt_directory = false,
+        received_contests_prompt_extension = false,
+        open_received_contests = false,
+        received_files_extension = "cpp",
         template_file = {
-          cpp = "~/Desktop/.config/nvim/lua/custom/template/file.cpp",
-        }
+          cpp = "/home/mohamed/.config/nvim/lua/custom/template/file.cpp",
+        },
       }
     end,
   },
