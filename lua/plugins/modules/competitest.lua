@@ -1,6 +1,6 @@
 local M =
 {
-  "Moo/competitest.nvim",
+  "xeluxee/competitest.nvim",
   --a Neovim plugin to automate testcases management and checking for Competitive Programming
   ft = "cpp",
   -- cmd = "Competitest",
