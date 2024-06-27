@@ -27,7 +27,8 @@ using namespace std;
 #define no cout << "NO\n"
 #define vll vector<ll>
 #define vi vector<int>
-#define OO 1e8
+#define pii pair<int,int>
+#define OO 2e9
 #define endl "\n"
 
 template <typename T> istream &operator>>(istream &input, vector<T> &data) {

@@ -25,6 +25,7 @@ local plugins = {
       { " ra", "<cmd>CompetiTest add_testcase <CR>", { desc = "add testcase" } },
       { " re", "<cmd>CompetiTest edit_testcase <CR>", { desc = "edit testcase" } },
       { " rr", "<cmd>CompetiTest run <CR>", { desc = "run code" } },
+      { " rd", "<cmd>CompetiTest delete_testcase <CR>", { desc = "delete testcase" } },
     },
     config = function()
       require("competitest").setup {
