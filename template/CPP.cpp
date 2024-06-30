@@ -30,6 +30,8 @@ using namespace std;
 #define pii pair<int,int>
 #define OO 2e9
 #define endl "\n"
+const int dx[]{0, 1, 0, -1, -1, -1, 1, 1};
+const int dy[]{1, 0, -1, 0, -1, 1, -1, 1};
 
 template <typename T> istream &operator>>(istream &input, vector<T> &data) {
   for (T &x : data)
