@@ -14,9 +14,9 @@ Step 1: Clone the Repository
 
 Clone this repository to your local machine in your Neovim configuration folder (usually located in ~/.config/nvim/):
 
-bash
-
+```bash
 git clone https://github.com/Moosayed1/nvim.git ~/.config/nvim
+```
 
 Step 2: Install Plugins
 
