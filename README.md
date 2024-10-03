@@ -16,7 +16,7 @@ Clone this repository to your local machine in your Neovim configuration folder 
 
 bash
 
-git clone https://github.com/your-username/your-repo-name.git ~/.config/nvim
+git clone https://github.com/Moosayed1/nvim.git ~/.config/nvim
 
 Step 2: Install Plugins
 
@@ -52,12 +52,12 @@ Folder Structure
 
 The structure of the configuration is as follows:
 
-bash
-
+```bash
 .
 ├── init.lua                 # Entry point of the configuration
 ├── lazy-lock.json           # Lock file for Lazy.nvim plugins
-├── lua │   ├── chadrc.lua           # Main configuration file for customizing NvChad
+├── lua
+│   ├── chadrc.lua           # Main configuration file for customizing NvChad
 │   ├── configs              # Folder for specific module configurations
 │   │   ├── conform.lua
 │   │   ├── lazy.lua         # Plugin manager configuration
@@ -69,6 +69,7 @@ bash
 └── template                 # Project templates
     ├── CPP
     └── CPP.cpp
+```
 
 Customizations
 Plugin Management
