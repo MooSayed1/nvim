@@ -8,6 +8,7 @@
 //
 #include <bits/stdc++.h>
 using namespace std;
+
 #ifdef MOHAMED
 #include "debug.hpp"
 #else
@@ -19,10 +20,11 @@ using namespace std;
   ios_base::sync_with_stdio(false);                                            \
   cin.tie(NULL);
 
-#define ll long long
+#define int long long
 #define all(a) (a).begin(), (a).end()
 #define sz(a) (int)(a).size()
 #define pb push_back
+#define f(i, a, b) for (int i = a; i < b; i++)
 #define yes cout << "YES\n"
 #define no cout << "NO\n"
 #define vll vector<ll>
@@ -30,6 +32,7 @@ using namespace std;
 #define pii pair<int,int>
 #define OO 2e9
 #define endl "\n"
+#define popCnt(x) (__builtin_popcountll(x))
 const int dx[]{0, 1, 0, -1, -1, -1, 1, 1};
 const int dy[]{1, 0, -1, 0, -1, 1, -1, 1};
 
