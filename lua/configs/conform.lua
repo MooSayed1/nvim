@@ -1,6 +1,7 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
+    cpp = { "cpp" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
@@ -12,4 +13,4 @@ local options = {
   -- },
 }
 
-return options
+require("conform").setup(options)
