@@ -1,13 +1,15 @@
 local plugins = {
   {
+    "NvChad/base46",
+    branch = "v2.0",
+  },
+  {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
   },
-  -- These are some examples, uncomment them if you want to see them work!
-  --
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -15,7 +17,6 @@ local plugins = {
       require "configs.lspconfig"
     end,
   },
-
   {
     "xeluxee/competitest.nvim",
     dependencies = "MunifTanjim/nui.nvim",
@@ -37,7 +38,6 @@ local plugins = {
           java = { exec = "javac", args = { "$(FNAME)" } },
         },
         received_problems_path = "$(HOME)/Competitive Programming/$(JUDGE)/$(CONTEST)/$(PROBLEM).$(FEXT)",
-        -- received_problems_path = "$(HOME)/Desktop/IEEE-CS-25/Rookies/Task1/$(PROBLEM).$(FEXT)",
         received_contests_directory = "$(HOME)/Competitive Programming/$(JUDGE)/$(CONTEST)",
         received_contests_problems_path = "$(PROBLEM).$(FEXT)",
         received_problems_prompt_path = false,
@@ -53,7 +53,6 @@ local plugins = {
       }
     end,
   },
-
   {
     "williamboman/mason.nvim",
     opts = {
@@ -67,17 +66,6 @@ local plugins = {
       },
     },
   },
-  --
-  --
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
 }
 
 return plugins

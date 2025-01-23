@@ -29,6 +29,14 @@ require("lazy").setup({
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
+--print("Loading base46...") Debugin
+local base46 = require("base46")
+if not base46 then
+  print("base46 is nil!")
+else
+  print("base46 loaded successfully!")
+end
+
 require "options"
 require "nvchad.autocmds"
 

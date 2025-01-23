@@ -6,14 +6,15 @@ local M = {}
 
 M.ui = {
   -- theme = "tokyodark",
-  theme = "tokyodark", -- default theme
+  theme = "onedark", -- default theme
+  -- theme = "tokyodark", -- default theme
+  theme_toggle = { "tokyodark", "catppuccin" },
 
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
   },
-  theme_toggle = { "tokyodark", "catppuccin" },
-  transparency = false,
+  transparency = true,
   nvdash = {
     load_on_startup = true,
 
