@@ -1,8 +1,5 @@
 local plugins = {
-  {
-    "NvChad/base46",
-    branch = "v2.0",
-  },
+
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
